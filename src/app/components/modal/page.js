@@ -17,10 +17,7 @@ const ProductModal = ({ data, onClose }) => {
 
                     <Modal.Section>
 
-
-                        {/* <TextContainer  > */}
-                        <p className='my-1 text-xl'>{data?.title}</p>
-                        {/* </TextContainer> */}
+                        <p className='my-1 text-xl'>{data?.title}</p>   
 
 
                     </Modal.Section>
@@ -30,9 +27,9 @@ const ProductModal = ({ data, onClose }) => {
                 {/* Image section */}
                 <Modal.Section style={{ border: "none" }} >
                     <div className='flex items-center justify-center w-full h-full '>
-                        {/* <TextContainer> */}
+
                         <Image src={data?.image} height={100} width={200} alt="product_image" />
-                        {/* </TextContainer> */}
+
                     </div>
                 </Modal.Section>
 
@@ -40,10 +37,9 @@ const ProductModal = ({ data, onClose }) => {
                 <Modal.Section>
                     <div className=' px-7'>
                         <div className='h-full w-full border-y-2 py-12 border-gray-600' >
-                            {/* <TextContainer> */}
                             <p className='text-3xl'>Description</p>
                             <p>{data?.description}</p>
-                            {/* </TextContainer> */}
+
                         </div>
 
                     </div>
@@ -52,7 +48,7 @@ const ProductModal = ({ data, onClose }) => {
                 <Modal.Section  >
                     <div className=' px-7'>
                         <div className='h-full w-full  py-12 border-gray-600' >
-                            {/* <TextContainer> */}
+
                             <div className='mb-1' >
                                 <p className='text-3xl' >Rating:</p>
                             </div>
@@ -61,7 +57,7 @@ const ProductModal = ({ data, onClose }) => {
                             <br />
                             <span className='font-bold'>Rated by:</span>{data?.rating.count}
 
-                            {/* </TextContainer> */}
+
                         </div>
 
                     </div>
