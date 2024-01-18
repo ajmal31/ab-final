@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import "../app/globals.css"
 import Head from 'next/head'
+import { AppProvider } from '@shopify/polaris'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -15,7 +16,13 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel='icon'href='https://img.freepik.com/free-vector/realistic-silver-frame-template_23-2149247772.jpg'  ></link>
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+       
+       {children}
+
+       
+      
+      </body>
     </html>
   )
 }

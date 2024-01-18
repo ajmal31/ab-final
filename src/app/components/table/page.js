@@ -1,6 +1,6 @@
 "use client"
 import '@shopify/polaris/build/esm/styles.css';
-import {ProductModal} from '../modal/page';
+import ProductModal from '../../components/modal/page';
 import { useState, useCallback, useEffect } from 'react';
 import { Page, Card, } from '@shopify/polaris';
 import { IndexFilters, IndexTable, useSetIndexFiltersMode,Button } from '@shopify/polaris';
