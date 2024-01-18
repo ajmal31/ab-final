@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output:'export',
+    // output:'export',
     images:{
         domains:["fakestoreapi.com","freepik.com"]
     },
     
-    reactStrictMode: true,
-    experimental: {
-        appDir: true,
-      },
+    // reactStrictMode: true,
+    // experimental: {
+    //     appDir: true,
+    //   },
    
 }
 
