@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 
+.add-product-button {
+    background-color: blue;  /* Replace with your desired color */
+  }
