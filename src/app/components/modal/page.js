@@ -1,6 +1,4 @@
-
-import { Modal, TextContainer, Button } from '@shopify/polaris';
-
+import { Modal } from '@shopify/polaris';
 const ProductModal = ({ data, onClose }) => {
     const handleShow = () => onClose();
 
@@ -16,9 +14,9 @@ const ProductModal = ({ data, onClose }) => {
                 <Modal.Section>
 
 
-                    <TextContainer  >
+                    {/* <TextContainer  > */}
                         <p className='my-1 text-xl'>{data.title}</p>
-                    </TextContainer>
+                    {/* </TextContainer> */}
 
 
                 </Modal.Section>
@@ -38,10 +36,10 @@ const ProductModal = ({ data, onClose }) => {
             <Modal.Section>
                 <div className=' px-7'>
                     <div className='h-full w-full border-y-2 py-12 border-gray-600' >
-                        <TextContainer>
+                        {/* <TextContainer> */}
                             <p className='text-3xl'>Description</p>
                             <p>{data?.description}</p>
-                        </TextContainer>
+                        {/* </TextContainer> */}
                     </div>
 
                 </div>
@@ -50,17 +48,16 @@ const ProductModal = ({ data, onClose }) => {
             <Modal.Section  >
                 <div className=' px-7'>
                     <div className='h-full w-full  py-12 border-gray-600' >
-                        <TextContainer>
+                        {/* <TextContainer> */}
                             <div className='mb-1' >
                                 <p className='text-3xl' >Rating:</p>
                             </div>
-
 
                             <span className='font-bold'>Rating:</span>{data.rating.rate}
                             <br />
                             <span className='font-bold'>Rated by:</span>{data.rating.count}
 
-                        </TextContainer>
+                        {/* </TextContainer> */}
                     </div>
 
                 </div>
