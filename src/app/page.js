@@ -1,4 +1,4 @@
-import Image from 'next/image'
+"use client"
 import Table from './components/table/page'
 export default function Home() {
   return (

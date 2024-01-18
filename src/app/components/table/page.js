@@ -1,11 +1,12 @@
 "use client"
 import '@shopify/polaris/build/esm/styles.css';
-import Modal from '../modal/page';
+import {ProductModal} from '../modal/page';
 import { useState, useCallback, useEffect } from 'react';
 import { Page, Card, } from '@shopify/polaris';
 import { IndexFilters, IndexTable, useSetIndexFiltersMode,Button } from '@shopify/polaris';
 import { AppProvider } from '@shopify/polaris'
 import axios from 'axios';
+import Image from 'next/image';
 
 const Table = () => {
 
@@ -92,10 +93,12 @@ const Table = () => {
 
             >
                 <IndexTable.Cell>
-                    <img
+                    <Image
                         src={image}
                         alt={"product thumbnail" + title}
-                        style={{ height: '40px', width: '40px' }}
+                        width={30}
+                        height={30}
+                        
                     />
                 </IndexTable.Cell>
                 <IndexTable.Cell className=' max-w-[30px] overflow-hidden whitespace-nowrap overflow-ellipsis' >{title}</IndexTable.Cell>
@@ -111,8 +114,8 @@ const Table = () => {
 
     
     return (
-        <AppProvider>
-            {show && <Modal data={data} onClose={handleShow} />}
+        <AppProvider i18n={{}}>
+            {show && <ProductModal data={data} onClose={handleShow} />}
             <Page
                
                 title={"Products"}
